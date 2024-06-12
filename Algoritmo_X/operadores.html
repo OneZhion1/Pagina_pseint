@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Variables</title>
+</head>
+<body>
+    <div class="sidebar">
+      <div class="logo_details">
+        <i class='bx bxl-visual-studio' ></i>
+        <div class="logo_name">Algoritmo_X</div>
+        <i class="bx bx-menu" id="btn"></i>
+      </div>
+      <ul class="nav-list">
+        <li>
+          <a href="operadores.html">
+            <i class='bx bx-book-open'></i>
+            <span class="link_name">Operadores</span>
+          </a>
+          <span class="tooltip">Operadores</span>
+        </li>
+        <li>
+          <a href="constantes.html">
+            <i class='bx bx-bracket'></i>
+            <span class="link_name">Constantes</span>
+          </a>
+          <span class="tooltip">Constantes</span>
+        </li>
+        <li>
+          <a href="Variables.html">
+            <i class="bx bx-chat"></i>
+            <span class="link_name">Funciones</span>
+          </a>
+          <span class="tooltip">Funciones</span>
+        </li>
+        <li>
+          <a href="Ejemplos.html">
+            <i class='bx bx-folder'></i>
+            <span class="link_name">Ejemplos</span>
+          </a>
+          <span class="tooltip">Ejemplos</span>
+        </li>
+        <li>
+            <a href="Introduccion.html">
+        <i class='bx bx-left-arrow-alt'></i>
+        <span class="link_name">Regresar</span>
+      </a>
+      <span class="tooltip">Regresar</span>
+        <li class="profile">
+          <div class="profile_details">
+            <img src="Algoritmo_X.png" alt="profile image">
+            <div class="profile_content">
+              <div class="name">Algoritmo_X</div>
+              <div class="designation">Bienvenido</div>
+            </div>
+          </div>
+          <i class="bx bx-log-out" id="log_out">
+            <a href="Introduccion.html"></a>
+          </i>
+        </li>
+      </ul>
+    </div>
+    <section class="home-section">
+      <div class="text">Operadores</div>
+      <div class="select">
+        <body>
+        <select id="miSelect" class="select-animated">
+          <option value=""><h1>Seleccione una opción</h1></option>
+          <option value=algebraicos.html>Algebraicos</option>
+          <option value=logicos.html>Logicos</option>
+          <option value=relaciones.html>Relaciones</option>
+          <option value=matematicas.html>Matematicas</option>
+          <option value=para_cadenas.html>Para cadenas</option>
+        </select>
+        <div class="operadores">
+          <img src="OPERADORES.png" alt="">
+         </div> 
+        <script>
+          const select = document.querySelector('select');
+          select.addEventListener('change', () => {
+            window.location.href = select.value;
+          });
+        </script>
+        </div>
+</body>
+</html>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
